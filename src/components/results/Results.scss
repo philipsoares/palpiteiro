@@ -1,0 +1,43 @@
+.results ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    padding: 0;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+
+    opacity: 0;
+
+    animation: showNumber 1s ease forwards;
+
+    @keyframes showNumber {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  &.megasena {
+    li {
+      margin: 10px 6px;
+      background: #18964f;
+    }
+  }
+  &.lotofacil {
+    li {
+      margin: 10px 10px;
+      background: #920888;
+    }
+  }
+}
