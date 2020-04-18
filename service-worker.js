@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/palpiteiro/precache-manifest.882768960a40b629d37bf5614b9e6faa.js"
+  "/palpiteiro/precache-manifest.c774507ed095d9ae60c6ca300295d873.js"
 );
 
 self.addEventListener('message', (event) => {

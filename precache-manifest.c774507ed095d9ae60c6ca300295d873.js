@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bbb832b67bdfaee116f48f864a6f1421",
+    "revision": "ea1e4115d9310b4a1bda9622b8d5399e",
     "url": "/palpiteiro/index.html"
   },
   {
-    "revision": "8ccd4a5cde30718e2d98",
+    "revision": "c6bacff2c250e7c72daf",
     "url": "/palpiteiro/static/css/main.28f4a190.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/palpiteiro/static/js/2.06cf4759.chunk.js"
   },
   {
-    "revision": "8ccd4a5cde30718e2d98",
-    "url": "/palpiteiro/static/js/main.b68625d0.chunk.js"
+    "revision": "c6bacff2c250e7c72daf",
+    "url": "/palpiteiro/static/js/main.d12cd35d.chunk.js"
   },
   {
     "revision": "32559738f0ffc95b1624",
