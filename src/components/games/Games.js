@@ -11,20 +11,23 @@ export default class Games extends Component {
         nome: "Mega Sena",
         total: "60",
         sortear: "6",
-        position: "0 10px"
+        position: "0 10px",
       },
       {
         id: "lotofacil",
         nome: "Lotofácil",
         total: "25",
         sortear: "15",
-        position: "0 -35px"
-      }
+        position: "0 -35px",
+      },
     ];
 
-    //this.state = {};
-
     this.draw = this.draw.bind(this);
+
+    this.state = {
+      actual: "",
+      results: "",
+    };
   }
 
   draw(game) {
@@ -46,7 +49,7 @@ export default class Games extends Component {
       }
     }
 
-    results = results.map(function(number, index) {
+    results = results.map(function (number, index) {
       return (
         <li key={number} style={{ animationDelay: ++index / 2 + "s" }}>
           {number}
@@ -54,10 +57,10 @@ export default class Games extends Component {
       );
     });
 
-    console.log(results);
-    // this.setState({ results: "", actual: game.id }, () => {
-    //   this.setState({ results: results });
-    // });
+    // console.log(results);
+    this.setState({ results: "", actual: game.id }, () => {
+      this.setState({ results: results });
+    });
   }
 
   render() {
@@ -75,9 +78,14 @@ export default class Games extends Component {
     }
 
     return (
-      <section className="games">
-        <ul>{rows}</ul>
-      </section>
+      <div>
+        <section className="games">
+          <ul>{rows}</ul>
+        </section>
+        <section className="results">
+          <ul className={this.state.actual}>{this.state.results}</ul>
+        </section>
+      </div>
     );
   }
 }

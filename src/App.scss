@@ -1,7 +1,7 @@
 .App {
   color: #333;
   padding: 15px;
-  max-width: 500px;
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -9,4 +9,8 @@
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
+}
+
+p {
+  line-height: 1.5rem;
 }

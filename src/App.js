@@ -17,7 +17,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="header">
-          <h2>Palpiteiro</h2>
+          <h2>Palpiteiro da Sorte</h2>
           <p>Clique em um dos jogos abaixo para gerar palpites.</p>
         </header>
 
