@@ -14,9 +14,8 @@
     text-align: center;
     width: 36px;
     height: 36px;
-
+    background-color: #000;
     opacity: 0;
-
     animation: showNumber 1s ease forwards;
 
     @keyframes showNumber {
@@ -38,6 +37,18 @@
     li {
       margin: 10px 10px;
       background: #920888;
+    }
+  }
+  &.quina {
+    li {
+      margin: 10px 10px;
+      background: #260085;
+    }
+  }
+  &.lotomania {
+    li {
+      margin: 10px 10px;
+      background: #f78100;
     }
   }
 }

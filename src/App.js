@@ -9,7 +9,7 @@ class App extends React.Component {
 
     this.state = {
       actual: "",
-      results: ""
+      results: "",
     };
 
     this.draw = this.draw.bind(this);
@@ -49,7 +49,7 @@ class App extends React.Component {
       <div className="App">
         <header className="header">
           <h2>Palpiteiro da Sorte</h2>
-          <p>Clique em um dos jogos abaixo para gerar palpites.</p>
+          <p>Escolha um dos seus jogos favoritos para gerar palpites.</p>
         </header>
 
         <Games draw={this.draw} />

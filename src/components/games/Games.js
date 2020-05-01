@@ -1,24 +1,10 @@
 import React from "react";
 import { Router, Link } from "react-router-dom";
+
 import "./Games.scss";
 
 export default function Games(props) {
-  let games = [
-    {
-      id: "megasena",
-      nome: "Mega Sena",
-      total: "60",
-      sortear: "6",
-      position: "0 10px",
-    },
-    {
-      id: "lotofacil",
-      nome: "Lotofácil",
-      total: "25",
-      sortear: "15",
-      position: "0 -35px",
-    },
-  ];
+  let games = require("./games.json");
 
   let rows = [];
 
